@@ -1,0 +1,30 @@
+# inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+  Exclude:
+    - db/schema.rb
+    - db/seeds.rb
+    - config/**/*
+
+    - test/**/*
+
+Bundler/OrderedGems:
+  Exclude:
+    - 'Gemfile'
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - 'Gemfile'
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
